@@ -1,0 +1,1739 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awsome kit  -->
+    <script src="https://kit.fontawesome.com/6e565221c4.js" crossorigin="anonymous"></script>
+    <!-- link css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>ND_PBX</title>
+</head>
+
+
+<body onload="myFunction()">
+    <!-- preloader  -->
+    <div id="loader">
+        <div class="img_wrap">
+            <img src="assets/img/VNDPBX-LOGO.gif">
+        </div>
+    </div>
+    <!-- preloader  -->
+    <section class="main_body" id="preloader_id" class="animate-bottom">
+        <div id="close_wrapper">
+            <aside class="slidebar_Wrapper">
+                <a href="#" class="d-md-none" id="sidebar-close" class="timesclose"><i
+                        class="far fa-times-circle"></i></a>
+                <div class="sidebar-brand">
+                    <a href="#" class="d-md-none" id="sidebar-close"><i class="icon-close"></i></a>
+                    <a href="#">
+                        <img src="assets/img/main_logo.svg" alt="logo">
+                    </a>
+                </div>
+                <ul class="sidebar_nav">
+                    <li class="active_nav">
+                        <a href="index.html">
+                            <div class="img_wrap">
+                                <img src="assets/img/call.svg" alt=""></div> Call
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="img_wrap">
+                                <img src="assets/img/messenger.svg" alt=""></div> Chat
+                        </a>
+                    </li>
+                    <li>
+                        <a href="call_recording.html">
+                            <div class="img_wrap">
+                                <img src="assets/img/files.svg" alt=""></div> Files
+                        </a>
+                    </li>
+                    <li>
+                        <a href="help.html">
+                            <div class="img_wrap">
+                                <img src="assets/img/profile.svg" alt=""></div> Help
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img_wrap">
+                                <img src="assets/img/setting.svg" alt=""></div> Setting
+                        </a>
+                    </li>
+
+                </ul>
+            </aside>
+            <section class="call_wrapper">
+                <div class="nav_wrapper">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class=" collapse navbar-collapse nav_gap" id="navbarSupportedContent">
+                            <a href="#" class="navbar-brand d-lg-none pt-0 sidebar_toggle"><i
+                                    class="fas fa-bars"></i></a>
+                            <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+                                <li class="nav-item">
+                                    <p class="cursor_none " aria-current="page" href="#">Calls</p>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Phone</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+
+
+                            </ul>
+                            <div class="search">
+                                <div class="img_wrap"> <img src="assets/img/search.svg" alt=""> </div>
+                                <input type="text" class="form-control" placeholder="Search here">
+                            </div>
+                        </div>
+                        <div class="active_profile order-lg-last order-first">
+                            <!-- <div class="notify_img">
+                                <img src="assets/img/Notification.svg" alt="">
+                                <div class="blue_dot">
+
+                                </div>
+                            </div> -->
+                            <div class="profile_img profile_dropdown">
+                                <!-- <img src="assets/img/online_profile.svg" alt="" id="dp_img" onclick="myFunction()">
+                                <div class="green_dot">
+
+                                </div> -->
+
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle p-0" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/img/online_profile.svg" alt="">
+                                        <div class="green_dot">
+
+                                        </div>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-item p-2" href="#">
+                                            <div class="profile_logo">
+                                                <div class="logo_inner">
+                                                    <div class="logo_left">
+                                                        <div class="logo_img">
+                                                            <img src="assets/img/dropdown_pic.svg" alt="">
+                                                        </div>
+                                                        <div class="edit_edit">
+                                                            <img src="assets/img/dropdown_edit.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="logo_right">
+                                                        <div class="upper_title">
+                                                            <h1>
+                                                                Jehanzaib Younis
+                                                            </h1>
+                                                            <h3>
+                                                                <img src="assets/img/help_page/phone_ext.jpeg" alt="">  100vhs 
+                                                            </h3>
+                                                        </div>
+                                                        <div class="lower_detail">
+                                                            <div class="lower_row">
+                                                                <div class="img_wrap">
+                                                                    <img src="assets/img/location.svg" alt="">
+                                                                </div>
+                                                                <p>
+                                                                    Pasadena, Oklahoma
+                                                                </p>
+                                                            </div>
+                                                            <div class="lower_row">
+                                                                <div class="img_wrap">
+                                                                    <img src="assets/img/sms.svg" alt="">
+                                                                </div>
+                                                                <p>
+                                                                    jehanzaib.kiani@vndsolutions.com
+                                                                </p>
+                                                            </div>
+                                                            <div class="lower_row">
+                                                                <div class="img_wrap">
+                                                                    <img src="assets/img/call-calling.svg" alt="">
+                                                                </div>
+                                                                <p>
+                                                                    (225) 555-0118
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="manage_account">
+                                                <div class="account_row">
+                                                    <div class="img_wrap">
+                                                        <img src="assets/img/manage_account.svg" alt="">
+                                                    </div>
+                                                    <p>
+                                                        Manage Account
+                                                    </p>
+                                                </div>
+                                                <div class="account_row">
+                                                    <div class="img_wrap">
+                                                        <img src="assets/img/manage_noti.svg" alt="">
+                                                    </div>
+                                                    <p>
+                                                        Notification
+                                                    </p>
+                                                </div>
+                                                <div class="account_row">
+                                                    <div class="img_wrap">
+                                                        <img src="assets/img/logout.svg" alt="">
+                                                    </div>
+                                                    <p>
+                                                        Sign Out
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <li><a class="dropdown-item" href="#">Setting</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li> -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </nav>
+                </div>
+                <div class="call_analytics">
+
+                    <div class="dial_pad text-center">
+                        <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                            <div class="duration_sec">
+                                <input class="text-center" id="code">
+                                <!-- <input class="text-center" id="code"> -->
+                                <div class="duration_time">
+                                    <p class="text-center">
+                                        00:00:00
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a type="button" class="btn"
+                                    onclick="document.getElementById('code').value=document.getElementById('code').value + '1';">1</a>
+                                <a type="button" class="btn"
+                                    onclick="document.getElementById('code').value=document.getElementById('code').value + '2';">2
+                                    <div class="alpha">
+                                        <span>
+                                            A
+                                        </span>
+                                        <span>
+                                            B
+                                        </span>
+                                        <span>
+                                            C
+                                        </span>
+                                    </div>
+                                </a>
+                                <a type="button" class="btn"
+                                    onclick="document.getElementById('code').value=document.getElementById('code').value + '3';">3
+                                    <div class="alpha">
+                                        <span>
+                                            D
+                                        </span>
+                                        <span>
+                                            E
+                                        </span>
+                                        <span>
+                                            F
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-group ">
+                                <a type="button" class="btn btn-outline-secondary"
+                                    onclick="document.getElementById('code').value=document.getElementById('code').value + '4';">4
+                                    <div class="alpha">
+                                        <span>
+                                            G
+                                        </span>
+                                        <span>
+                                            H
+                                        </span>
+                                        <span>
+                                            I
+                                        </span>
+                                    </div>
+                                </a>
+                                <a type="button" class="btn btn-outline-secondary"
+                                    onclick="document.getElementById('code').value=document.getElementById('code').value + '5';">5
+                                    <div class="alpha">
+                                        <span>
+                                            J
+                                        </span>
+                                        <span>
+                                            K
+                                        </span>
+                                        <span>
+                                            L
+                                        </span>
+                                    </div>
+                                </a>
+                                <a type="button" class="btn btn-outline-secondary"
+                                    onclick="document.getElementById('code').value=document.getElementById('code').value + '6';">6
+                                    <div class="alpha">
+                                        <span>
+                                            M
+                                        </span>
+                                        <span>
+                                            N
+                                        </span>
+                                        <span>
+                                            O
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-outline-secondary"
+                                    onclick="document.getElementById('code').value=document.getElementById('code').value + '7';">7
+                                    <div class="alpha">
+                                        <span>
+                                            P
+                                        </span>
+                                        <span>
+                                            Q
+                                        </span>
+                                        <span>
+                                            R
+                                        </span>
+                                        <span>
+                                            S
+                                        </span>
+                                    </div>
+                                </a>
+                                <a type="button" class="btn btn-outline-secondary"
+                                    onclick="document.getElementById('code').value=document.getElementById('code').value + '8';">8
+                                    <div class="alpha">
+                                        <span>
+                                            T
+                                        </span>
+                                        <span>
+                                            U
+                                        </span>
+                                        <span>
+                                            V
+                                        </span>
+                                    </div>
+                                </a>
+                                <a type="button" class="btn btn-outline-secondary"
+                                    onclick="document.getElementById('code').value=document.getElementById('code').value + '9';">9
+                                    <div class="alpha">
+                                        <span>
+                                            W
+                                        </span>
+                                        <span>
+                                            X
+                                        </span>
+                                        <span>
+                                            Y
+                                        </span>
+                                        <span>
+                                            Z
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-outline-secondary pt-3"
+                                    onclick="document.getElementById('code').value=document.getElementById('code').value + '*';">*</a>
+                                <a type="button" class="btn btn-outline-secondary"
+                                    onclick="document.getElementById('code').value=document.getElementById('code').value + '0';">0
+                                    <div class="alpha">
+                                        <span>
+                                            +
+                                        </span>
+
+                                    </div>
+                                </a>
+                                <a type="button" class="btn btn-outline-secondary pt-3"
+                                    onclick="document.getElementById('code').value=document.getElementById('code').value + '#';">#</a>
+                            </div>
+
+                        </div>
+                        <div class="call_hangup text-center">
+                            <div class="call_btn">
+                                <a href=""><img src="assets/img/call_new.svg" alt=""></a>
+                            </div>
+                            <div class="hang_btn">
+                                <a data-bs-toggle="modal" href="#exampleModalToggle"><img src="assets/img/call_new.svg" alt=""></a>
+                            </div>
+
+                        </div>
+                        <div class="call_img">
+                            <div class="img_wrap">
+                                <a href=""> <img src="assets/img/call_img1.svg" alt=""></a>
+                            </div>
+                            <div class="img_wrap">
+                                <a href=""> <img src="assets/img/call_img2.svg" alt=""></a>
+                            </div>
+                            <div class="img_wrap">
+                                <a href=""> <img src="assets/img/call_img3.svg" alt=""></a>
+                            </div>
+                            <div class="mute_btn">
+                               <a><i class="fas fa-microphone"></i></a>
+                            </div>
+                        </div>
+                        <div class="custom_setup">
+                            <div class="dropdown">
+                                <a class="btn dropdown-toggle w-100" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="custom_inner">
+                                        <div class="img_wrap">
+                                            <img src="assets/img/call-outgoing.svg" alt="">
+                                        </div>
+                                        <p>
+                                            Forward
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <ul class="dropdown-menu forward_menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <a class="btn dropdown-toggle w-100" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="custom_inner">
+                                        <div class="img_wrap">
+                                            <img src="assets/img/Setting.svg" alt="">
+                                        </div>
+                                        <p>
+                                            Setting
+                                        </p>
+                                    </div>
+                                </a>
+
+                                <ul class="dropdown-menu forward_menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">Edit</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- edit setting modal  -->
+                    <div class="modal_wrapper">
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            style="display: none;" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                            <img src="assets/img/modal_close.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Always Available ( Office Hours)
+                                            </label>
+                                        </div>
+
+                                        <!-- nav_tabs start -->
+                                        <ul class="nav nav-tabs office_hours" id="myTab" role="tablist">
+                                            <li class="nav-item officeout_btn active flex_align" role="presentation">
+                                                <button class="nav-link" id="home-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                                    aria-selected="true">Home</button>
+                                            </li>
+                                            <li class="nav-item officeout_btn flex_align" role="presentation">
+                                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#profile" type="button" role="tab"
+                                                    aria-controls="profile" aria-selected="false">Profile</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                                aria-labelledby="home-tab">
+                                                <div class="in_office">
+                                                    <p>
+                                                        If You are in office
+                                                    </p>
+                                                    <div class="show_hours flex_align">
+                                                        <a data-bs-toggle="modal" href="#exampleModalToggle1">Show
+                                                            Office Hours</a>
+                                                    </div>
+                                                </div>
+                                                <div class="form_row">
+
+                                                    <label for="num" class="form-label">How many Seconds phone will
+                                                        ring?</label>
+                                                    <input type="text" class="form-control" id="num"
+                                                        aria-describedby="emailHelp" placeholder="30">
+
+                                                </div>
+                                                <div class="form_row">
+                                                    <label class="form-label">When phone is online?</label>
+                                                    <div class="select_wrap">
+                                                        <select class="form-control">
+                                                            <option>Extension</option>
+                                                            <option>Extension1</option>
+                                                            <option>Extension2</option>
+                                                            <option>Extension3</option>
+                                                        </select>
+                                                        <div class="drop_select">
+                                                            <img src="assets/img/modal_drop.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form_row">
+                                                    <label class="form-label">On Busy</label>
+                                                    <div class="select_wrap">
+                                                        <select class="form-control">
+                                                            <option>Busy voicemail</option>
+                                                            <option>Busy voicemail</option>
+                                                            <option>Busy voicemail</option>
+                                                            <option>Busy voicemail</option>
+                                                        </select>
+                                                        <div class="drop_select">
+                                                            <img src="assets/img/modal_drop.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form_row">
+                                                    <label class="form-label">On No Answer</label>
+                                                    <div class="select_wrap">
+                                                        <select class="form-control">
+                                                            <option>Busy voicemail</option>
+                                                            <option>Busy voicemail</option>
+                                                            <option>Busy voicemail</option>
+                                                            <option>Busy voicemail</option>
+                                                        </select>
+                                                        <div class="drop_select">
+                                                            <img src="assets/img/modal_drop.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form_row">
+                                                    <label class="form-label">When Phone is offline</label>
+                                                    <div class="select_wrap">
+                                                        <select class="form-control">
+                                                            <option>Unavilable voicemail</option>
+                                                            <option>Unavilable voicemail</option>
+                                                            <option>Unavilable voicemail</option>
+                                                            <option>Unavilable voicemail</option>
+                                                        </select>
+                                                        <div class="drop_select">
+                                                            <img src="assets/img/modal_drop.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="save_cancel">
+                                                    <div class="save_btn flex_align">
+                                                        <a href="">Save</a>
+                                                    </div>
+                                                    <div class="cancel_btn flex_align">
+                                                        <a href="">Cancel</a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="profile" role="tabpanel"
+                                                aria-labelledby="profile-tab">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                                                    totam magni temporibus eos minus. Ex, quis veniam? In consequuntur,
+                                                    hic, sequi veniam eaque voluptatem repellendus doloribus dolorem ab,
+                                                    ipsam ducimus facere pariatur.</p>
+                                            </div>
+
+                                        </div>
+                                        <!-- nav_tabs end -->
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- edit setting modal end -->
+                    <!-- hanup modal start -->
+                    <div class="modal_hang">
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="tag_wrapper">
+                                            <div class="img_wrap">
+                                                <img src="assets/img/Tag.png" alt="">
+                                            </div>
+                                            <p>
+                                                Tags
+                                            </p>
+                                        </div>
+                                        <div class="lead_interest">
+                                            <div class="lead_btn flex_align">
+                                                <a href="">Lead</a>
+                                            </div>
+                                            <div class="interest_btn flex_align">
+                                                <a href="">Interested</a>
+                                            </div>
+                                        </div>
+                                        <div class="tag_wrapper">
+                                            <div class="img_wrap">
+                                                <img src="assets/img/edit-2.svg" alt="">
+                                            </div>
+                                            <p>
+                                                Note
+                                            </p>
+                                        </div>
+                                        <div class="input_wrap">
+                                            <input type="text" class="form-control" id="" aria-describedby="">
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <div class="tag_wrapper">
+                                                <div class="img_wrap">
+                                                    <img src="assets/img/star_hollow.svg" alt="">
+                                                </div>
+                                                <p>
+                                                    Call Quality
+                                                </p>
+                                            </div>
+                                            <div class="start_yellow">
+                                                <div class="img_wrap">
+                                                    <img src="assets/img/star_yellow.svg" alt="">
+                                                </div>
+                                                <div class="img_wrap">
+                                                    <img src="assets/img/star_yellow.svg" alt="">
+                                                </div>
+                                                <div class="img_wrap">
+                                                    <img src="assets/img/star_yellow.svg" alt="">
+                                                </div>
+                                                <div class="img_wrap">
+                                                    <img src="assets/img/star_yellow.svg" alt="">
+                                                </div>
+                                                <div class="img_wrap">
+                                                    <img src="assets/img/star_yellow.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="save_cancel">
+                                            <div class="save_btn flex_align">
+                                                <a href="">Save</a>
+                                            </div>
+                                            <div class="cancel_btn flex_align">
+                                                <a href="">Cancel</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Hide this modal and show the first with the button below.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- hanup modal end-->
+                    <!-- office timing modal start  -->
+                    <div class="office_time_modal">
+                        <div class="modal fade show" id="exampleModalToggle1" aria-labelledby="exampleModalToggleLabel1"
+                            tabindex="-1" style="display: none;" aria-modal="true" role="dialog">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="office_hour_wrap">
+                                            <div class="office_hour_row">
+                                                <div class="day_wrap">
+                                                  <p>Monday</p>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        From:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="08:00">
+                                                    </div>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        To:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="17:00">
+                                                    </div>
+                                                </div>
+                                                <div class="long_input">
+                                                    <input type="text" class="form-control">
+                                                    <p>08:00 - 23:59</p>
+                                                </div>
+                                            </div>
+                                            <div class="office_hour_row">
+                                                <div class="day_wrap">
+                                                  <p>Tuesday</p>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        From:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="08:00">
+                                                    </div>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        To:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="17:00">
+                                                    </div>
+                                                </div>
+                                                <div class="long_input">
+                                                    <input type="text" class="form-control">
+                                                    <p>08:00 - 23:59</p>
+                                                </div>
+                                            </div>
+                                            <div class="office_hour_row">
+                                                <div class="day_wrap">
+                                                  <p>Wednesday</p>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        From:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="08:00">
+                                                    </div>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        To:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="17:00">
+                                                    </div>
+                                                </div>
+                                                <div class="long_input">
+                                                    <input type="text" class="form-control">
+                                                    <p>08:00 - 23:59</p>
+                                                </div>
+                                            </div>
+                                            <div class="office_hour_row">
+                                                <div class="day_wrap">
+                                                  <p>Thursday</p>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        From:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="08:00">
+                                                    </div>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        To:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="17:00">
+                                                    </div>
+                                                </div>
+                                                <div class="long_input">
+                                                    <input type="text" class="form-control">
+                                                    <p>08:00 - 23:59</p>
+                                                </div>
+                                            </div>
+                                            <div class="office_hour_row">
+                                                <div class="day_wrap">
+                                                  <p>Friday</p>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        From:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="08:00">
+                                                    </div>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        To:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="17:00">
+                                                    </div>
+                                                </div>
+                                                <div class="long_input">
+                                                    <input type="text" class="form-control">
+                                                    <p>08:00 - 23:59</p>
+                                                </div>
+                                            </div>
+                                            <div class="office_hour_row">
+                                                <div class="day_wrap">
+                                                  <p>Saturday</p>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        From:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="08:00">
+                                                    </div>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        To:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="17:00">
+                                                    </div>
+                                                </div>
+                                                <div class="long_input">
+                                                    <input type="text" class="form-control">
+                                                    <p>08:00 - 23:59</p>
+                                                </div>
+                                            </div>
+                                            <div class="office_hour_row">
+                                                <div class="day_wrap">
+                                                  <p>Sunday</p>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        From:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="08:00">
+                                                    </div>
+                                                </div>
+                                                <div class="from_to">
+                                                    <p>
+                                                        To:
+                                                    </p>
+                                                    <div class="input_wrap">
+                                                        <input type="text" class="form-control" placeholder="17:00">
+                                                    </div>
+                                                </div>
+                                                <div class="long_input">
+                                                    <input type="text" class="form-control">
+                                                    <p>08:00 - 23:59</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- office timing modal end  -->
+
+                    <!-- call statistics start -->
+                    <div class="call_static">
+                        <h1>
+                            Call Analytics
+                        </h1>
+                        <div class="static_inner">
+                            <div class="call_record">
+                                <ul>
+                                    <li>
+                                        <!-- <img src="assets/img/miss_call.svg" alt=""> -->
+                                        <div class="red">
+
+                                        </div>
+                                       <span>Missed calls</span> 
+                                    </li>
+                                    <li>
+                                        <!-- <img src="assets/img/answer_call.svg" alt=""> -->
+                                        <div class="green">
+
+                                        </div>
+                                        <span>Answered</span>  
+                                    </li>
+                                    <li>
+                                        <!-- <img src="assets/img/forward_call.svg" alt=""> -->
+                                        <div class="orange">
+                                            
+                                        </div>
+                                        <span>Forwarded</span> 
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        23%
+                                    </li>
+                                    <li>
+                                        6%
+                                    </li>
+                                    <li>
+                                        55%
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- history section start  -->
+                    <div class="history_wrapper">
+                        <ul class="nav nav-pills">
+                            <li class="active">
+                                <a href="#1a" data-toggle="tab">All</a>
+                            </li>
+                            <li><a href="#2a" data-toggle="tab">Missed</a>
+                            </li>
+                            <li><a href="#3a" data-toggle="tab">Voicemail</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content clearfix">
+                            <div class="tab-pane active" id="1a">
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-in.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_pink">
+                                            <a>NS</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-in.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_pink">
+                                            <a>NS</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-in.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_pink">
+                                            <a>NS</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-in.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_pink">
+                                            <a>NS</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane" id="2a">
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-in.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_pink">
+                                            <a>NS</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-in.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_pink">
+                                            <a>NS</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-in.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_pink">
+                                            <a>NS</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-in.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_pink">
+                                            <a>NS</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="3a">
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-in.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_pink">
+                                            <a>NS</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-in.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_pink">
+                                            <a>NS</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-out.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_blue">
+                                            <a>MK</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-in.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_pink">
+                                            <a>NS</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="history_inner">
+                                    <div class="history_detail">
+                                        <div class="phone_img">
+                                            <img src="assets/img/phone-in.svg" alt="">
+                                        </div>
+                                        <div class="history_text bg_pink">
+                                            <a>NS</a>
+                                            <img src="assets/img/status.svg" alt="">
+                                        </div>
+                                        <h2>
+                                            Mashok khan
+                                        </h2>
+                                    </div>
+                                    <div class="time">
+                                        <div class="date_wrap">
+                                            <span>
+                                                11
+                                            </span>
+                                            <span>Oct</span>
+
+                                        </div>
+                                        <p>
+                                            11:34 PM
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- history section start  -->
+        </div>
+    </section>
+    </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+
+
+<script>
+    $(".sidebar_toggle").click(function () {
+        $("#close_wrapper").toggleClass('sidebar_show');
+        //  $(this).parent('.main_body').find(".slidebar_Wrapper").show("slow");
+    });
+
+    $("#sidebar-close").click(function () {
+        $("#close_wrapper").removeClass('sidebar_show');
+        //  $(this).parent('.main_body').find(".slidebar_Wrapper").show("slow");
+    });
+</script>
+<!-- perloader start -->
+<script>
+    var myVar;
+
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("preloader_id").style.display = "block";
+    }
+</script>
+<!-- perloader end -->
+<script>
+    $('.mute_btn').click(function () {
+        // $(this).html('<i class="fas fa-microphone-slash"></i>');
+        $(this).toggleClass('hover_line');
+
+    })
+</script>
+
+<script>
+    // Add slideDown animation to Bootstrap dropdown when expanding.
+    $('.dropdown').on('show.bs.dropdown', function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+
+    // Add slideUp animation to Bootstrap dropdown when collapsing.
+    $('.dropdown').on('hide.bs.dropdown', function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+    });
+</script>
+<script>
+    $("li.officeout_btn").click(function () {
+        $("li.officeout_btn").css("background-color", "rgba(255, 125, 0, 0.05)");
+        $(this).css("background-color", "#FF7D00");
+    });
+</script>
+
+</html>

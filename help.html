@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awsome kit  -->
+    <script src="https://kit.fontawesome.com/6e565221c4.js" crossorigin="anonymous"></script>
+    <!-- link css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>ND_PBX</title>
+</head>
+
+
+<body onload="myFunction()">
+    <!-- preloader  -->
+    <div id="loader">
+        <div class="img_wrap">
+            <img src="assets/img/VNDPBX-LOGO.gif">
+        </div>
+    </div>
+    <!-- preloader  -->
+    <section class="main_body" id="preloader_id" class="animate-bottom">
+        <div id="close_wrapper">
+            <aside class="slidebar_Wrapper">
+                <a href="#" class="d-md-none" id="sidebar-close" class="timesclose"><i
+                        class="far fa-times-circle"></i></a>
+                <div class="sidebar-brand">
+                    <a href="#" class="d-md-none" id="sidebar-close"><i class="icon-close"></i></a>
+                    <a href="#">
+                        <img src="assets/img/main_logo.svg" alt="logo">
+                    </a>
+                </div>
+                <ul class="sidebar_nav">
+                    <li>
+                        <a href="index.html">
+                            <div class="img_wrap call_icon_img">
+                                <img src="assets/img/call.svg" alt=""></div> Call
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chat.html">
+                            <div class="img_wrap">
+                                <img src="assets/img/messenger.svg" alt=""></div> Chat
+                        </a>
+                    </li>
+                    <li>
+                        <a href="call_recording.html">
+                            <div class="img_wrap">
+                                <img src="assets/img/files.svg" alt=""></div> Files
+                        </a>
+                    </li>
+                    <li class="active_nav">
+                        <a href="#">
+                            <div class="img_wrap">
+                                <img src="assets/img/profile.svg" alt=""></div> Help
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="img_wrap">
+                                <img src="assets/img/setting.svg" alt=""></div> Setting
+                        </a>
+                    </li>
+
+                </ul>
+            </aside>
+            <section class="call_wrapper">
+                <div class="nav_wrapper">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class=" collapse navbar-collapse nav_gap" id="navbarSupportedContent">
+                            <a href="#" class="navbar-brand d-lg-none pt-0 sidebar_toggle"><i
+                                    class="fas fa-bars"></i></a>
+                            <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link help_nav active" href="#"> Help</a>
+                                </li>
+                            </ul>
+                            <div class="search">
+                                <div class="img_wrap"> <img src="assets/img/search.svg" alt=""> </div>
+                                <input type="text" class="form-control" placeholder="Search here">
+                            </div>
+                        </div>
+                        <div class="active_profile order-lg-last order-first">
+                            <!-- <div class="notify_img">
+                                <img src="assets/img/Notification.svg" alt="">
+                                <div class="blue_dot">
+
+                                </div>
+                            </div> -->
+                            <div class="profile_img profile_dropdown">
+                                <!-- <img src="assets/img/online_profile.svg" alt="" id="dp_img" onclick="myFunction()">
+                                <div class="green_dot">
+
+                                </div> -->
+
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle p-0" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="assets/img/online_profile.svg" alt="">
+                                        <div class="green_dot">
+
+                                        </div>
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-item p-2" href="#">
+                                            <div class="profile_logo">
+                                                <div class="logo_inner">
+                                                    <div class="logo_left">
+                                                        <div class="logo_img">
+                                                            <img src="assets/img/dropdown_pic.svg" alt="">
+                                                        </div>
+                                                        <div class="edit_edit">
+                                                            <img src="assets/img/dropdown_edit.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="logo_right">
+                                                        <div class="upper_title">
+                                                            <h1>
+                                                                Jehanzaib Younis
+                                                            </h1>
+                                                            <h3>
+                                                                <img src="assets/img/help_page/phone_ext.jpeg" alt="">  100vhs 
+                                                            </h3>
+                                                        </div>
+                                                        <div class="lower_detail">
+                                                            <div class="lower_row">
+                                                                <div class="img_wrap">
+                                                                    <img src="assets/img/location.svg" alt="">
+                                                                </div>
+                                                                <p>
+                                                                    Pasadena, Oklahoma
+                                                                </p>
+                                                            </div>
+                                                            <div class="lower_row">
+                                                                <div class="img_wrap">
+                                                                    <img src="assets/img/sms.svg" alt="">
+                                                                </div>
+                                                                <p>
+                                                                    jehanzaib.kiani@vndsolutions.com
+                                                                </p>
+                                                            </div>
+                                                            <div class="lower_row">
+                                                                <div class="img_wrap">
+                                                                    <img src="assets/img/call-calling.svg" alt="">
+                                                                </div>
+                                                                <p>
+                                                                    (225) 555-0118
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="manage_account">
+                                                <div class="account_row">
+                                                    <div class="img_wrap">
+                                                        <img src="assets/img/manage_account.svg" alt="">
+                                                    </div>
+                                                    <p>
+                                                        Manage Account
+                                                    </p>
+                                                </div>
+                                                <div class="account_row">
+                                                    <div class="img_wrap">
+                                                        <img src="assets/img/manage_noti.svg" alt="">
+                                                    </div>
+                                                    <p>
+                                                        Notification
+                                                    </p>
+                                                </div>
+                                                <div class="account_row">
+                                                    <div class="img_wrap">
+                                                        <img src="assets/img/logout.svg" alt="">
+                                                    </div>
+                                                    <p>
+                                                        Sign Out
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <li><a class="dropdown-item" href="#">Setting</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li> -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </nav>
+                </div>
+
+                <!-- main help section start  -->
+                <div class="help_wrapper">
+                    <div class="help_inner">
+                        <!-- first box  -->
+                        <div class="help_box help_blue">
+                            <h2 class="box_title">For Admins</h2>
+                            <div class="box_detail">
+                                <p> Teams Adoption Guide</p>
+                                <img src="assets/img/help_page/sahre.svg" alt="">
+                            </div>
+                            <div class="box_detail">
+                                <p> Support remote workers with Teams</p>
+                                <img src="assets/img/help_page/sahre.svg" alt="">
+                            </div>
+                            <div class="box_detail">
+                                <p>Training for Admins</p>
+                                <img src="assets/img/help_page/sahre.svg" alt="">
+                            </div>
+                            <div class="box_detail">
+                                <p>Teams features by platform</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>For admins : Skype for business teams upgrade</p>
+                                <img src="assets/img/help_page/sahre.svg" alt="">
+                            </div>
+                            <div class="box_detail">
+                                <p>For your end users: Switng from Skype for business</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Integrate with Microsoft Power Platform</p>
+                                <img src="assets/img/help_page/sahre.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- second box  -->
+                        <div class="help_box help_yellow">
+                            <h2 class="box_title">Popular</h2>
+                            <div class="box_detail">
+                                <p> Show your screen during a meeting</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Blur your background</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Record a meeting</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Learn about teams and channels</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Send Praise to people</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Find instructor - led training</p>
+                                <img src="assets/img/help_page/sahre.svg" alt="">
+                            </div>
+                            <div class="box_detail">
+                                <p>Visit the Team forum</p>
+                                <img src="assets/img/help_page/sahre.svg" alt="">
+                            </div>
+                            <div class="box_detail">
+                                <p>Keyboad shortcuts for Teams</p>
+                            </div>
+                        </div>
+                        <!-- third box  -->
+                        <div class="help_box help_darkblue">
+                            <h2 class="box_title">Browse Help</h2>
+                            <div class="box_detail">
+                                <p>Basic</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Chat</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Teams & Channels</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Meetings</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Calls & Devices</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Notifications & Settings</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Files</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Apps & Services</p>
+                            </div>
+                            <div class="box_detail">
+                                <p>Troubleshooting</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="help_lower">
+                        <div class="help_content">
+                            <h1 class="help_text">Still need help?</h1>
+                            <p>We’re here for you.</p>
+                            <div class="help_find">
+                                <div class="find_box help_yellow">
+                                    <img src="assets/img/help_page/messenger.svg" alt="">
+                                    <h6>Chat</h6>
+                                </div>
+                                <div class="find_box help_blue">
+                                    <img src="assets/img/help_page/people.svg" alt="">
+                                    <h6>Call</h6>
+                                </div>
+                                <div class="find_box help_green">
+                                    <img src="assets/img/help_page/form.svg" alt="">
+                                    <h6>Form</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="help_img">
+                            <img src="assets/img/help_page/help_img.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- main help section end -->
+            </section>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+
+
+<script>
+    $(".sidebar_toggle").click(function () {
+        $("#close_wrapper").toggleClass('sidebar_show');
+        //  $(this).parent('.main_body').find(".slidebar_Wrapper").show("slow");
+    });
+
+    $("#sidebar-close").click(function () {
+        $("#close_wrapper").removeClass('sidebar_show');
+        //  $(this).parent('.main_body').find(".slidebar_Wrapper").show("slow");
+    });
+</script>
+<!-- perloader start -->
+<script>
+    var myVar;
+
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("preloader_id").style.display = "block";
+    }
+</script>
+<!-- perloader end -->
+<script>
+    $('.mute_btn').click(function () {
+        $(this).html('<i class="fas fa-microphone-slash"></i>');
+    })
+</script>
+
+<script>
+    // Add slideDown animation to Bootstrap dropdown when expanding.
+    $('.dropdown').on('show.bs.dropdown', function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+
+    // Add slideUp animation to Bootstrap dropdown when collapsing.
+    $('.dropdown').on('hide.bs.dropdown', function () {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+    });
+</script>
+<script>
+    $("li.officeout_btn").click(function () {
+        $("li.officeout_btn").css("background-color", "rgba(255, 125, 0, 0.05)");
+        $(this).css("background-color", "#FF7D00");
+    });
+</script>
+
+</html>
